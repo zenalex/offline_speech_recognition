@@ -1,7 +1,7 @@
 name: offline_speech_recognition
 description: A new flutter plugin project.
 version: 0.0.1
-author:
+# author:
 homepage:
 
 environment:

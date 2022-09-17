@@ -47,7 +47,7 @@ class _AppBodyState extends State<AppBody> {
                   }),
               if (downloading == true)
                 LinearProgressIndicator(value: downloadProgress),
-              RaisedButton(
+              ElevatedButton(
                   child: Text("Download"),
                   onPressed: () {
                     SpeechRecognition.downloadModel(SpeechLanguage.english,
@@ -62,23 +62,23 @@ class _AppBodyState extends State<AppBody> {
                       });
                     });
                   }),
-              RaisedButton(
+              ElevatedButton(
                   child: Text("Load"),
                   onPressed: () {
                     SpeechRecognition.load(SpeechLanguage.english);
                   }),
-              RaisedButton(
+              ElevatedButton(
                   child: Text("Start/Stop"),
                   onPressed: () {
                     SpeechRecognition.start();
                   }),
-              RaisedButton(
+              ElevatedButton(
                   child: Text("Delete Language"),
                   onPressed: () {
                     SpeechRecognition.destroy();
                     SpeechRecognition.deleteModel(SpeechLanguage.english);
                   }),
-              RaisedButton(
+              ElevatedButton(
                   child: Text("Delete All Languages"),
                   onPressed: () {
                     SpeechRecognition.destroy();
